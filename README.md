@@ -51,7 +51,7 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps)(MoviesPage);
 ```
 
-We using the __mapStateToProps()__ function to pull the `movies` property from our store's state and attach it to the `props` of this component. As you see, our __MoviesPage__ just renders out a __MoviesList__ component. In this case, our __MoviesList__ component is purely presentational.
+We are using the __mapStateToProps()__ function to pull the `movies` property from our store's state and attach it to the `props` of this component. As you see, our __MoviesPage__ just renders out a __MoviesList__ component. In this case, our __MoviesList__ component is purely presentational.
 
 ```javascript
 // ./src/components/MoviesList.js
@@ -351,3 +351,5 @@ What we don't see is information particular to that movie, but we'll leave that 
 So far we saw how to set up our nested routes.  We do so by making one route a child of the another route.  For example, in our application above the Route pointing to `/movies` is a parent of the route pointing to `/movies/:id`.  Similarly when a user visits the child url, the component from the parent route still displays, and the component from the child url is set as a child. To display the child component, we must make use of `this.props.children`.
 
 >Note: Understanding this.props.children frequently confounds students and pros alike. So feel free to take a break, and then review this codealong again.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-router-nested-routes'>Nested Routes</a> on Learn.co and start learning to code for free.</p>
